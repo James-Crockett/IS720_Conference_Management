@@ -17,24 +17,24 @@ It features advanced database logic including **Stored Procedures**, **Triggers*
 The system implements 13 core features through PL/SQL stored procedures:
 
 ### User & Conference Management
-* [cite_start]**Add User:** Registers new users while preventing duplicate emails and updating existing records [cite: 663-668].
-* [cite_start]**Add Roles:** Assigns roles (Organizer, Reviewer, Author) to users for specific conferences [cite: 681-686].
-* [cite_start]**Register User:** Handles conference registration, calculates fees (early vs. regular), and tracks payment status [cite: 805-825].
+* **Add User:** Registers new users while preventing duplicate emails and updating existing records [cite: 663-668].
+* **Add Roles:** Assigns roles (Organizer, Reviewer, Author) to users for specific conferences [cite: 681-686].
+* **Register User:** Handles conference registration, calculates fees (early vs. regular), and tracks payment status [cite: 805-825].
 
 ### Paper Submission & Review
-* [cite_start]**Add Paper:** Manages paper submissions, including multi-author support and topic tagging [cite: 704-718].
-* [cite_start]**Enter Bids:** Allows reviewers to bid on papers they wish to review [cite: 745-755].
-* [cite_start]**Submit Review:** Processes reviews while automatically blocking submissions if a **Conflict of Interest (COI)** exists (e.g., author and reviewer are from the same institution) [cite: 760-774].
-* [cite_start]**Update Status:** Updates acceptance status and calculates average review scores automatically [cite: 786-798].
+* **Add Paper:** Manages paper submissions, including multi-author support and topic tagging [cite: 704-718].
+* **Enter Bids:** Allows reviewers to bid on papers they wish to review [cite: 745-755].
+* **Submit Review:** Processes reviews while automatically blocking submissions if a **Conflict of Interest (COI)** exists (e.g., author and reviewer are from the same institution) [cite: 760-774].
+* **Update Status:** Updates acceptance status and calculates average review scores automatically [cite: 786-798].
 
 ### Advanced Logic (Complex Features)
-* [cite_start]**Auto-Assign Reviewers:** Uses an algorithm to assign papers to reviewers based on bids, ensuring no COIs and respecting reviewer workload limits [cite: 832-845].
-* [cite_start]**Session Organization:** Algorithms calculate similarity scores between papers and session topics to suggest the best papers for specific conference sessions [cite: 888-911].
-* [cite_start]**Statistics Generation:** Generates comprehensive reports on acceptance rates, topic popularity, and reviewer activity [cite: 916-930].
+* **Auto-Assign Reviewers:** Uses an algorithm to assign papers to reviewers based on bids, ensuring no COIs and respecting reviewer workload limits [cite: 832-845].
+* **Session Organization:** Algorithms calculate similarity scores between papers and session topics to suggest the best papers for specific conference sessions [cite: 888-911].
+* **Statistics Generation:** Generates comprehensive reports on acceptance rates, topic popularity, and reviewer activity [cite: 916-930].
 
 ### Automated Notifications
-* [cite_start]**Review Reminders:** Identifies reviewers with overdue reviews and generates reminder messages [cite: 848-856].
-* [cite_start]**Author Reminders:** Alerts authors of accepted papers who have not yet registered for the conference [cite: 868-880].
+* **Review Reminders:** Identifies reviewers with overdue reviews and generates reminder messages [cite: 848-856].
+* **Author Reminders:** Alerts authors of accepted papers who have not yet registered for the conference [cite: 868-880].
 
 ## Database Schema
 The system is built on a relational schema including the following key entities:
